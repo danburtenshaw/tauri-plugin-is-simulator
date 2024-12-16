@@ -1,0 +1,18 @@
+[package]
+name = "tauri-plugin-is-simulator"
+version = "1.0.0"
+authors = [ "danburtenshaw" ]
+description = "A simple Tauri plugin to check if the app is running in a simulator."
+edition = "2021"
+rust-version = "1.77.2"
+exclude = ["/examples", "/webview-dist", "/webview-src", "/node_modules"]
+links = "tauri-plugin-is-simulator"
+license = "MIT"
+
+[dependencies]
+tauri = { version = "2.1.1" }
+serde = "1.0"
+thiserror = "2"
+
+[build-dependencies]
+tauri-plugin = { version = "2.0.2", features = ["build"] }
